@@ -181,17 +181,12 @@ Project Link: [https://github.com/your_username/repo_name](https://github.com/yo
 
 <!-- ACKNOWLEDGEMENTS -->
 ## Acknowledgements
-* [GitHub Emoji Cheat Sheet](https://www.webpagefx.com/tools/emoji-cheat-sheet)
-* [Img Shields](https://shields.io)
-* [Choose an Open Source License](https://choosealicense.com)
-* [GitHub Pages](https://pages.github.com)
-* [Animate.css](https://daneden.github.io/animate.css)
-* [Loaders.css](https://connoratherton.com/loaders)
-* [Slick Carousel](https://kenwheeler.github.io/slick)
-* [Smooth Scroll](https://github.com/cferdinandi/smooth-scroll)
-* [Sticky Kit](http://leafo.net/sticky-kit)
-* [JVectorMap](http://jvectormap.com)
-* [Font Awesome](https://fontawesome.com)
+* [Kaggle Datasets](https://www.kaggle.com/datasets)
+* [Towards DS Datasets](https://towardsdatascience.com/all-the-datasets-you-need-to-practice-data-science-skills-and-make-a-great-portfolio-857a348883b5)
+* [Dataquest Datasets](https://www.dataquest.io/blog/free-datasets-for-projects/)
+* [First Apache Spark ML model](https://towardsdatascience.com/your-first-apache-spark-ml-model-d2bb82b599dd)
+* [Distributed Data Processing with Apache Spark](https://medium.com/datadriveninvestor/distributed-data-processing-with-apache-spark-2a5e473b0cb1)
+* [Best README template](https://github.com/othneildrew/Best-README-Template/blob/master/README.md)
 
 
 
