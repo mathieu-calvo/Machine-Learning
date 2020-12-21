@@ -26,7 +26,7 @@
 
 <!-- PROJECT LOGO -->
 <br />
-<p align="center">
+<div align="center">
   <a href="https://github.com/othneildrew/Best-README-Template">
     <img src="images/logo.png" alt="Logo" width="80" height="80">
   </a>
@@ -45,7 +45,7 @@
     ·
     <a href="https://github.com/othneildrew/Best-README-Template/issues">Request Feature</a>
   </p>
-</p>
+</div>
 
 
 
@@ -181,13 +181,18 @@ Project Link: [https://github.com/your_username/repo_name](https://github.com/yo
 
 <!-- ACKNOWLEDGEMENTS -->
 ## Acknowledgements
+* Chris Bishop “Pattern Recognition and Machine Learning”, Springer, 2006 (main textbook)
+* Tom Mitchell, “Machine Learning”, McGraw Hill, 1997
+* Kevin Murphy, “Machine Learning: A Probabilistic Perspective”, MIT Press, 2012 (advanced)
+* Micheal Bowles, "Machine learning in Python"
 * [Kaggle Datasets](https://www.kaggle.com/datasets)
 * [Towards DS Datasets](https://towardsdatascience.com/all-the-datasets-you-need-to-practice-data-science-skills-and-make-a-great-portfolio-857a348883b5)
 * [Dataquest Datasets](https://www.dataquest.io/blog/free-datasets-for-projects/)
 * [First Apache Spark ML model](https://towardsdatascience.com/your-first-apache-spark-ml-model-d2bb82b599dd)
 * [Distributed Data Processing with Apache Spark](https://medium.com/datadriveninvestor/distributed-data-processing-with-apache-spark-2a5e473b0cb1)
 * [Best README template](https://github.com/othneildrew/Best-README-Template/blob/master/README.md)
-
+* [Bayesian vs Frequentist video](https://www.youtube.com/watch?v=meivbbfHmK0)
+* [Frequentism and Bayesianism video](https://www.youtube.com/watch?v=KhAUfqhLakw)
 
 
 
