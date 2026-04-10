@@ -51,3 +51,6 @@ artifacts/
 # Environment
 .env
 *.log
+
+# LLMs
+.claude
