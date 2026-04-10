@@ -1,218 +1,196 @@
-<!--
-*** Thanks for checking out the Best-README-Template. If you have a suggestion
-*** that would make this better, please fork the repo and create a pull request
-*** or simply open an issue with the tag "enhancement".
-*** Thanks again! Now go create something AMAZING! :D
--->
+# Machine Learning: From Foundations to Production
 
+A comprehensive, hands-on educational repository that walks through all major machine learning concepts, model families, and production best practices. Every section includes runnable end-to-end examples with real datasets.
 
+## Who This Is For
 
-<!-- PROJECT SHIELDS -->
-<!--
-*** I'm using markdown "reference style" links for readability.
-*** Reference links are enclosed in brackets [ ] instead of parentheses ( ).
-*** See the bottom of this document for the declaration of the reference variables
-*** for contributors-url, forks-url, etc. This is an optional, concise syntax you may use.
-*** https://www.markdownguide.org/basic-syntax/#reference-style-links
--->
-[![Contributors][contributors-shield]][contributors-url]
-[![Forks][forks-shield]][forks-url]
-[![Stargazers][stars-shield]][stars-url]
-[![Issues][issues-shield]][issues-url]
-[![MIT License][license-shield]][license-url]
-[![LinkedIn][linkedin-shield]][linkedin-url]
+- Data scientists looking for a structured reference across ML topics
+- Engineers transitioning into ML who want practical, runnable examples
+- Students who want to go beyond theory with state-of-the-art implementations
+- Anyone preparing for ML interviews or building a portfolio
 
+## Prerequisites
 
+- Python 3.10+
+- Familiarity with NumPy and Pandas
+- Basic linear algebra and statistics
 
-<!-- PROJECT LOGO -->
-<br />
-<div align="center">
-  <a href="https://github.com/othneildrew/Best-README-Template">
-    <img src="images/logo.png" alt="Logo" width="80" height="80">
-  </a>
+## Setup
 
-  <h3 align="center">Best-README-Template</h3>
+```bash
+git clone https://github.com/mathieu-calvo/Machine-Learning.git
+cd Machine-Learning
+python -m venv venv
+source venv/bin/activate  # Windows: venv\Scripts\activate
+pip install -r requirements.txt
+```
 
-  <p align="center">
-    An awesome README template to jumpstart your projects!
-    <br />
-    <a href="https://github.com/othneildrew/Best-README-Template"><strong>Explore the docs »</strong></a>
-    <br />
-    <br />
-    <a href="https://github.com/othneildrew/Best-README-Template">View Demo</a>
-    ·
-    <a href="https://github.com/othneildrew/Best-README-Template/issues">Report Bug</a>
-    ·
-    <a href="https://github.com/othneildrew/Best-README-Template/issues">Request Feature</a>
-  </p>
-</div>
+## Repository Structure
 
+```
+Machine-Learning/
+├── 01_foundations/
+│   ├── 01_data_exploration_and_preprocessing.ipynb
+│   ├── 02_feature_engineering.ipynb
+│   └── 03_evaluation_metrics_and_validation.ipynb
+├── 02_supervised_learning/
+│   ├── 01_linear_regression.ipynb
+│   ├── 02_logistic_regression.ipynb
+│   ├── 03_decision_trees_and_random_forests.ipynb
+│   ├── 04_gradient_boosting.ipynb
+│   ├── 05_support_vector_machines.ipynb
+│   ├── 06_knn.ipynb
+│   └── 07_naive_bayes.ipynb
+├── 03_unsupervised_learning/
+│   ├── 01_kmeans_clustering.ipynb
+│   ├── 02_hierarchical_clustering.ipynb
+│   ├── 03_dbscan.ipynb
+│   ├── 04_pca_dimensionality_reduction.ipynb
+│   └── 05_anomaly_detection.ipynb
+├── 04_deep_learning/
+│   ├── 01_feedforward_neural_networks.ipynb
+│   ├── 02_convolutional_neural_networks.ipynb
+│   ├── 03_recurrent_neural_networks.ipynb
+│   ├── 04_transformers_and_attention.ipynb
+│   └── 05_transfer_learning.ipynb
+├── 05_nlp/
+│   ├── 01_text_preprocessing_and_embeddings.ipynb
+│   └── 02_sentiment_analysis_with_transformers.ipynb
+├── 06_time_series/
+│   ├── 01_classical_forecasting.ipynb
+│   └── 02_deep_learning_forecasting.ipynb
+├── 07_reinforcement_learning/
+│   └── 01_q_learning_intro.ipynb
+├── 08_mlops/
+│   ├── 01_experiment_tracking_mlflow.ipynb
+│   ├── 02_model_registry_and_versioning.ipynb
+│   ├── 03_data_versioning_dvc.md
+│   ├── 05_ci_cd_for_ml.md
+│   ├── 06_monitoring_and_drift_detection.ipynb
+│   ├── 07_feature_stores.md
+│   └── model_serving/
+│       ├── app.py
+│       ├── Dockerfile
+│       ├── requirements.txt
+│       └── README.md
+├── data/
+│   └── README.md
+├── requirements.txt
+├── LICENSE
+├── README.md
+└── .gitignore
+```
 
+---
 
-<!-- TABLE OF CONTENTS -->
-<details open="open">
-  <summary>Table of Contents</summary>
-  <ol>
-    <li>
-      <a href="#about-the-project">About The Project</a>
-      <ul>
-        <li><a href="#built-with">Built With</a></li>
-      </ul>
-    </li>
-    <li>
-      <a href="#getting-started">Getting Started</a>
-      <ul>
-        <li><a href="#prerequisites">Prerequisites</a></li>
-        <li><a href="#installation">Installation</a></li>
-      </ul>
-    </li>
-    <li><a href="#usage">Usage</a></li>
-    <li><a href="#roadmap">Roadmap</a></li>
-    <li><a href="#contributing">Contributing</a></li>
-    <li><a href="#license">License</a></li>
-    <li><a href="#contact">Contact</a></li>
-    <li><a href="#acknowledgements">Acknowledgements</a></li>
-  </ol>
-</details>
+## Learning Path
 
+### 1. Foundations (`01_foundations/`)
 
+Build the core skills that every ML workflow depends on.
 
-<!-- ABOUT THE PROJECT -->
-## About The Project
+| Notebook | Topics |
+|----------|--------|
+| [01 - Data Exploration & Preprocessing](01_foundations/01_data_exploration_and_preprocessing.ipynb) | EDA, missing values, encoding, scaling, train/test splits |
+| [02 - Feature Engineering](01_foundations/02_feature_engineering.ipynb) | Feature creation, selection, polynomial features, target encoding |
+| [03 - Evaluation Metrics & Validation](01_foundations/03_evaluation_metrics_and_validation.ipynb) | Cross-validation, stratified splits, classification & regression metrics, ROC/AUC, bias-variance tradeoff |
 
-[![Product Name Screen Shot][product-screenshot]](https://example.com)
+### 2. Supervised Learning (`02_supervised_learning/`)
 
-There are many great README templates available on GitHub, however, I didn't find one that really suit my needs so I created this enhanced one. I want to create a README template so amazing that it'll be the last one you ever need -- I think this is it.
+End-to-end examples for every major supervised model family.
 
-Here's why:
-* Your time should be focused on creating something amazing. A project that solves a problem and helps others
-* You shouldn't be doing the same tasks over and over like creating a README from scratch
-* You should element DRY principles to the rest of your life :smile:
+| Notebook | Model Family | Task |
+|----------|-------------|------|
+| [01 - Linear Regression](02_supervised_learning/01_linear_regression.ipynb) | Linear Models | Regression |
+| [02 - Logistic Regression](02_supervised_learning/02_logistic_regression.ipynb) | Linear Models | Classification |
+| [03 - Decision Trees & Random Forests](02_supervised_learning/03_decision_trees_and_random_forests.ipynb) | Tree-Based | Classification & Regression |
+| [04 - Gradient Boosting](02_supervised_learning/04_gradient_boosting.ipynb) | Ensemble (XGBoost, LightGBM, CatBoost) | Classification |
+| [05 - Support Vector Machines](02_supervised_learning/05_support_vector_machines.ipynb) | Kernel Methods | Classification |
+| [06 - K-Nearest Neighbors](02_supervised_learning/06_knn.ipynb) | Instance-Based | Classification |
+| [07 - Naive Bayes](02_supervised_learning/07_naive_bayes.ipynb) | Probabilistic | Text Classification |
 
-Of course, no one template will serve all projects since your needs may be different. So I'll be adding more in the near future. You may also suggest changes by forking this repo and creating a pull request or opening an issue. Thanks to all the people have have contributed to expanding this template!
+### 3. Unsupervised Learning (`03_unsupervised_learning/`)
 
-A list of commonly used resources that I find helpful are listed in the acknowledgements.
+| Notebook | Topics |
+|----------|--------|
+| [01 - K-Means Clustering](03_unsupervised_learning/01_kmeans_clustering.ipynb) | K-Means, elbow method, silhouette analysis |
+| [02 - Hierarchical Clustering](03_unsupervised_learning/02_hierarchical_clustering.ipynb) | Agglomerative clustering, dendrograms, linkage methods |
+| [03 - DBSCAN](03_unsupervised_learning/03_dbscan.ipynb) | Density-based clustering, epsilon tuning, noise handling |
+| [04 - PCA & Dimensionality Reduction](03_unsupervised_learning/04_pca_dimensionality_reduction.ipynb) | PCA, explained variance, t-SNE, UMAP |
+| [05 - Anomaly Detection](03_unsupervised_learning/05_anomaly_detection.ipynb) | Isolation Forest, Local Outlier Factor, One-Class SVM |
 
-### Built With
+### 4. Deep Learning (`04_deep_learning/`)
 
-This section should list any major frameworks that you built your project using. Leave any add-ons/plugins for the acknowledgements section. Here are a few examples.
-* [Bootstrap](https://getbootstrap.com)
-* [JQuery](https://jquery.com)
-* [Laravel](https://laravel.com)
+All notebooks use **PyTorch** with modern best practices.
 
+| Notebook | Architecture | Task |
+|----------|-------------|------|
+| [01 - Feedforward Neural Networks](04_deep_learning/01_feedforward_neural_networks.ipynb) | MLP | Tabular classification |
+| [02 - Convolutional Neural Networks](04_deep_learning/02_convolutional_neural_networks.ipynb) | CNN | Image classification (CIFAR-10) |
+| [03 - Recurrent Neural Networks](04_deep_learning/03_recurrent_neural_networks.ipynb) | LSTM/GRU | Sequence modeling |
+| [04 - Transformers & Attention](04_deep_learning/04_transformers_and_attention.ipynb) | Transformer | Sequence classification |
+| [05 - Transfer Learning](04_deep_learning/05_transfer_learning.ipynb) | ResNet fine-tuning | Image classification |
 
+### 5. Natural Language Processing (`05_nlp/`)
 
-<!-- GETTING STARTED -->
-## Getting Started
+| Notebook | Topics |
+|----------|--------|
+| [01 - Text Preprocessing & Embeddings](05_nlp/01_text_preprocessing_and_embeddings.ipynb) | Tokenization, TF-IDF, Word2Vec, sentence embeddings |
+| [02 - Sentiment Analysis with Transformers](05_nlp/02_sentiment_analysis_with_transformers.ipynb) | Fine-tuning HuggingFace models for classification |
 
-This is an example of how you may give instructions on setting up your project locally.
-To get a local copy up and running follow these simple example steps.
+### 6. Time Series (`06_time_series/`)
 
-### Prerequisites
+| Notebook | Topics |
+|----------|--------|
+| [01 - Classical Forecasting](06_time_series/01_classical_forecasting.ipynb) | ARIMA, seasonal decomposition, Prophet |
+| [02 - Deep Learning Forecasting](06_time_series/02_deep_learning_forecasting.ipynb) | LSTM-based time series prediction |
 
-This is an example of how to list things you need to use the software and how to install them.
-* npm
-  ```sh
-  npm install npm@latest -g
-  ```
+### 7. Reinforcement Learning (`07_reinforcement_learning/`)
 
-### Installation
+| Notebook | Topics |
+|----------|--------|
+| [01 - Q-Learning Introduction](07_reinforcement_learning/01_q_learning_intro.ipynb) | Q-tables, exploration vs exploitation, Gymnasium environments |
 
-1. Get a free API Key at [https://example.com](https://example.com)
-2. Clone the repo
-   ```sh
-   git clone https://github.com/your_username_/Project-Name.git
-   ```
-3. Install NPM packages
-   ```sh
-   npm install
-   ```
-4. Enter your API in `config.js`
-   ```JS
-   const API_KEY = 'ENTER YOUR API';
-   ```
+### 8. MLOps - Productionizing ML (`08_mlops/`)
 
+Take models from notebooks to production with state-of-the-art tooling.
 
+| Resource | Topics |
+|----------|--------|
+| [01 - Experiment Tracking with MLflow](08_mlops/01_experiment_tracking_mlflow.ipynb) | Logging params/metrics/artifacts, comparing runs, MLflow UI |
+| [02 - Model Registry & Versioning](08_mlops/02_model_registry_and_versioning.ipynb) | MLflow Model Registry, model stages, reproducibility |
+| [03 - Data Versioning with DVC](08_mlops/03_data_versioning_dvc.md) | DVC pipelines, remote storage, data lineage |
+| [04 - Model Serving with FastAPI](08_mlops/model_serving/) | REST API, Docker, health checks, batch prediction |
+| [05 - CI/CD for ML](08_mlops/05_ci_cd_for_ml.md) | GitHub Actions, automated testing, model validation gates |
+| [06 - Monitoring & Drift Detection](08_mlops/06_monitoring_and_drift_detection.ipynb) | Data drift, model drift, Evidently AI dashboards |
+| [07 - Feature Stores](08_mlops/07_feature_stores.md) | Feature engineering at scale, online/offline stores, Feast |
 
-<!-- USAGE EXAMPLES -->
-## Usage
+---
 
-Use this space to show useful examples of how a project can be used. Additional screenshots, code examples and demos work well in this space. You may also link to more resources.
+## Key Concepts Covered
 
-_For more examples, please refer to the [Documentation](https://example.com)_
+| Concept | Where |
+|---------|-------|
+| Bias-Variance Tradeoff | Foundations 03, Supervised 01 |
+| Regularization (L1/L2) | Supervised 01-02, Deep Learning 01 |
+| Cross-Validation | Foundations 03 |
+| Hyperparameter Tuning | Supervised 04 (Optuna) |
+| Ensemble Methods | Supervised 03-04 |
+| Backpropagation | Deep Learning 01 |
+| Attention Mechanism | Deep Learning 04 |
+| Transfer Learning | Deep Learning 05, NLP 02 |
+| Experiment Tracking | MLOps 01-02 |
+| Model Deployment | MLOps 04 |
+| Monitoring in Production | MLOps 06 |
 
+## References
 
+- Bishop, C. (2006). *Pattern Recognition and Machine Learning*. Springer.
+- Goodfellow, I., Bengio, Y., & Courville, A. (2016). *Deep Learning*. MIT Press.
+- Murphy, K. (2022). *Probabilistic Machine Learning: An Introduction*. MIT Press.
+- Huyen, C. (2022). *Designing Machine Learning Systems*. O'Reilly.
+- Sculley, D. et al. (2015). *Hidden Technical Debt in Machine Learning Systems*. NeurIPS.
 
-<!-- ROADMAP -->
-## Roadmap
-
-See the [open issues](https://github.com/othneildrew/Best-README-Template/issues) for a list of proposed features (and known issues).
-
-
-
-<!-- CONTRIBUTING -->
-## Contributing
-
-Contributions are what make the open source community such an amazing place to be learn, inspire, and create. Any contributions you make are **greatly appreciated**.
-
-1. Fork the Project
-2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the Branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
-
-
-
-<!-- LICENSE -->
 ## License
 
-Distributed under the MIT License. See `LICENSE` for more information.
-
-
-
-<!-- CONTACT -->
-## Contact
-
-Your Name - [@your_twitter](https://twitter.com/your_username) - email@example.com
-
-Project Link: [https://github.com/your_username/repo_name](https://github.com/your_username/repo_name)
-
-
-
-<!-- ACKNOWLEDGEMENTS -->
-## Acknowledgements
-* Chris Bishop “Pattern Recognition and Machine Learning”, Springer, 2006 (main textbook)
-* Tom Mitchell, “Machine Learning”, McGraw Hill, 1997
-* Kevin Murphy, “Machine Learning: A Probabilistic Perspective”, MIT Press, 2012 (advanced)
-* Micheal Bowles, "Machine learning in Python"
-* [Kaggle Datasets](https://www.kaggle.com/datasets)
-* [Towards DS Datasets](https://towardsdatascience.com/all-the-datasets-you-need-to-practice-data-science-skills-and-make-a-great-portfolio-857a348883b5)
-* [Dataquest Datasets](https://www.dataquest.io/blog/free-datasets-for-projects/)
-* [First Apache Spark ML model](https://towardsdatascience.com/your-first-apache-spark-ml-model-d2bb82b599dd)
-* [Distributed Data Processing with Apache Spark](https://medium.com/datadriveninvestor/distributed-data-processing-with-apache-spark-2a5e473b0cb1)
-* [Best README template](https://github.com/othneildrew/Best-README-Template/blob/master/README.md)
-* [Bayesian vs Frequentist video](https://www.youtube.com/watch?v=meivbbfHmK0)
-* [Frequentism and Bayesianism video](https://www.youtube.com/watch?v=KhAUfqhLakw)
-
-
-
-
-<!-- MARKDOWN LINKS & IMAGES -->
-<!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
-[contributors-shield]: https://img.shields.io/github/contributors/othneildrew/Best-README-Template.svg?style=for-the-badge
-[contributors-url]: https://github.com/othneildrew/Best-README-Template/graphs/contributors
-[forks-shield]: https://img.shields.io/github/forks/othneildrew/Best-README-Template.svg?style=for-the-badge
-[forks-url]: https://github.com/othneildrew/Best-README-Template/network/members
-[stars-shield]: https://img.shields.io/github/stars/othneildrew/Best-README-Template.svg?style=for-the-badge
-[stars-url]: https://github.com/othneildrew/Best-README-Template/stargazers
-[issues-shield]: https://img.shields.io/github/issues/othneildrew/Best-README-Template.svg?style=for-the-badge
-[issues-url]: https://github.com/othneildrew/Best-README-Template/issues
-[license-shield]: https://img.shields.io/github/license/othneildrew/Best-README-Template.svg?style=for-the-badge
-[license-url]: https://github.com/othneildrew/Best-README-Template/blob/master/LICENSE.txt
-[linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
-[linkedin-url]: https://linkedin.com/in/othneildrew
-[product-screenshot]: images/screenshot.png
-
-
-
-
+MIT License. See [LICENSE](LICENSE) for details.

@@ -1,0 +1,8 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(rm -rf .idea .ipynb_checkpoints __pycache__ \"ML using sklearn.ipynb\" Untitled.ipynb Machine_learning_in_Python_notes.docx data_exploration.py)",
+      "Bash(mkdir -p 01_foundations 02_supervised_learning 03_unsupervised_learning 04_deep_learning 05_nlp 06_time_series 07_reinforcement_learning 08_mlops/model_serving data)"
+    ]
+  }
+}
